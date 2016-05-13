@@ -13,11 +13,12 @@
 	void CreandoMatriz (double* numeros) ;
 	void liberar_Memoria(double* numeros,char* palabras);
 	double factorizar(double* numeros);
+	void conjugar(char* palabras );
 
 
 	int main(int argc, char const *argv[]){
 		double* numeros = new double[6];
-		char* palabras = new char[100];
+		char* palabras = new char[35];
 	//	CreandoMatriz (numeros);
 		int opcion= 0;
 		while(opcion<3){
@@ -69,15 +70,8 @@
 			if(opcion==2){
 				cout<<"ingrese una palabra"<<endl;
 				cin>>palabras;
-				int contador=0;
-				for(int i =0;i<100;i++){
-					if(palabras[i] == '\0'){
-						contador=i;
-						break;
-					}
-
-				}
-				cout<<contador<<endl;
+				conjugar( palabras );
+				
 			}
 
 
@@ -128,4 +122,67 @@
 		
 
 		return ret;
+	}
+
+	void conjugar(char* palabras ){
+
+		//ar er ir
+		char palabraMod[35];
+		int contador=0;
+				for(int i =0;i<35;i++){
+					if(palabras[i] == '\0'){
+						contador=i;
+						break;
+					}
+
+				}
+				cout<<contador<<endl;
+				
+
+		//////////////////////////////////
+				contador= contador;
+				cout <<contador<<endl;
+				for(int i =0; i<(contador);i++){
+					cout << palabras[i]<< "="<<i<<endl ;
+
+				}
+
+
+				if((palabras[contador-2]=='a')&& (palabras[contador-1]=='r')){
+					cout<<"presente"<<endl;
+					for(int i =0; i<(contador-2);i++){
+						palabraMod[i]=palabras[i];
+						
+					}
+					cout<<palabraMod;
+					cout<<"o";
+					cout<<endl;
+					cout<<"pasado"<<endl;
+					cout<<palabraMod;
+					cout<<"aba";
+					cout<<endl;
+
+					cout<<"futuro"<<endl;
+					cout<<palabraMod;
+					cout<<"aré";
+					cout<<endl;
+
+					
+
+				}
+				
+
+				if((palabras[contador-2]=='e')&& (palabras[contador-1]=='r')){
+
+
+				}
+
+				if((palabras[contador-2]=='i')&& (palabras[contador-1]=='r')){
+
+
+				}
+
+
+
+
 	}
