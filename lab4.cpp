@@ -136,32 +136,32 @@
 					}
 
 				}
-				cout<<contador<<endl;
+				//cout<<contador<<endl;
 				
 
 		//////////////////////////////////
-				contador= contador;
-				cout <<contador<<endl;
-				for(int i =0; i<(contador);i++){
-					cout << palabras[i]<< "="<<i<<endl ;
+				//contador= contador;
+				//cout <<contador<<endl;
 
-				}
 
 
 				if((palabras[contador-2]=='a')&& (palabras[contador-1]=='r')){
+					cout<<"-------------------"<<endl;
 					cout<<"presente"<<endl;
 					for(int i =0; i<(contador-2);i++){
 						palabraMod[i]=palabras[i];
 						
 					}
+					palabraMod[contador-2] = '\0';
 					cout<<palabraMod;
 					cout<<"o";
 					cout<<endl;
+					cout<<"-------------------"<<endl;
 					cout<<"pasado"<<endl;
 					cout<<palabraMod;
 					cout<<"aba";
 					cout<<endl;
-
+					cout<<"-------------------"<<endl;
 					cout<<"futuro"<<endl;
 					cout<<palabraMod;
 					cout<<"aré";
@@ -174,13 +174,57 @@
 
 				if((palabras[contador-2]=='e')&& (palabras[contador-1]=='r')){
 
+					cout<<"-------------------"<<endl;
+					cout<<"presente"<<endl;
+					for(int i =0; i<(contador-2);i++){
+						palabraMod[i]=palabras[i];
+						
+					}
+					palabraMod[contador-2] = '\0';
+					cout<<palabraMod;
+					cout<<"o";
+					cout<<endl;
+					cout<<"-------------------"<<endl;
+					cout<<"pasado"<<endl;
+					cout<<palabraMod;
+					cout<<"ía";
+					cout<<endl;
+					cout<<"-------------------"<<endl;
+					cout<<"futuro"<<endl;
+					cout<<palabraMod;
+					cout<<"eré";
+					cout<<endl;
+
+
 
 				}
 
 				if((palabras[contador-2]=='i')&& (palabras[contador-1]=='r')){
+					cout<<"-------------------"<<endl;
+					cout<<"presente"<<endl;
+					for(int i =0; i<(contador-2);i++){
+						palabraMod[i]=palabras[i];
+						
+					}
+					palabraMod[contador-2] = '\0';
+					cout<<palabraMod;
+					cout<<"o";
+					cout<<endl;
+					cout<<"-------------------"<<endl;
+					cout<<"pasado"<<endl;
+					cout<<palabraMod;
+					cout<<"ía";
+					cout<<endl;
+					cout<<"-------------------"<<endl;
+					cout<<"futuro"<<endl;
+					cout<<palabraMod;
+					cout<<"iré";
+					cout<<endl;
+
 
 
 				}
+				cout<<"-------------------"<<endl;
 
 
 
